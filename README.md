@@ -5,30 +5,30 @@ ColaUtility is framework for android project.
 ###Util
 [Source code](app/src/main/java/com/cbstudio/colautility/Util.java)
 
-**Method**
-1. getPhoneNumber
-2. setFont
-3. convertStringToDate
-4. getDayString
-5. setClipBoard
-6. getExtension
-7. playAudioFile
-8. getStringFileSize
-9. convertDrawableToTempFile
+**Method**<br>
+1. getPhoneNumber<br>
+2. setFont<br>
+3. convertStringToDate<br>
+4. getDayString<br>
+5. setClipBoard<br>
+6. getExtension<br>
+7. playAudioFile<br>
+8. getStringFileSize<br>
+9. convertDrawableToTempFile<br>
 
 ###ImageUtil
 [Source code](app/src/main/java/com/cbstudio/colautility/ImageUtil.java)
 
-**Method**
-1.pxToDp
-2.dpToPx
-3.cropBitmap
+**Method**<br>
+1.pxToDp<br>
+2.dpToPx<br>
+3.cropBitmap<br>
   
 ###MathUtil
 [Source code](app/src/main/java/com/cbstudio/colautility/MathUtil.java)
 
-**Method**
-1.clamp
+**Method**<br>
+1.clamp<br>
 
 
 ###Thanks
