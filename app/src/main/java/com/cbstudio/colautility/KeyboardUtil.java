@@ -13,9 +13,6 @@ import android.widget.EditText;
  */
 public class KeyboardUtil {
 
-    /**
-     * Hides the soft keyboard
-     */
     public static void hideSoftKeyboard(Context context, EditText et) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(et.getWindowToken(), 0);
@@ -26,9 +23,6 @@ public class KeyboardUtil {
         imm.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken() , 0);
     }
 
-    /**
-     * Shows the soft keyboard
-     */
     public static void showSoftKeyboard(Context context, View view) {
         InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         view.requestFocus();
