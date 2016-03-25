@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.ParseException;
@@ -73,7 +74,7 @@ public class Util {
     ///------------ Date, String
     private static SimpleDateFormat defalutFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
-    public static Date convertStringtoDate(String date)
+    public static Date convertStringToDate(String date)
     {
         return convertStringToDate(date, defalutFormat);
     }
@@ -184,6 +185,42 @@ public class Util {
             }
         }
         return new File(path);
+    }
+
+    private static final String[] imageFileExtensions = new String[] {"jpg", "jpeg","png"};
+    private static final String[] videoFileExtensions = new String[] {"jpg", "jpeg","png"};
+
+    public static File[] getListOfImageFiles(String dir)
+    {
+        return getListOfFiles(new File(dir), imageFileExtensions);
+    }
+
+    public static File[] getListOfImageFile(File dir)
+    {
+        return getListOfFiles(dir, imageFileExtensions);
+    }
+
+    public static File[] getListOfVideoFile(File dir)
+    {
+        return getListOfFiles(dir, videoFileExtensions);
+    }
+
+    public static File[] getListOfVideoFile(String dir)
+    {
+        return getListOfFiles(new File(dir), videoFileExtensions);
+    }
+
+    private static File[] getListOfFiles(File dir, final String[] extensions)
+    {
+        return dir.listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                for (String ext : extensions) {
+                    if (pathname.getName().toLowerCase().endsWith(ext)) return true;
+                }
+                return false;
+            }
+        });
     }
 
 }
