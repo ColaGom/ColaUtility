@@ -122,6 +122,14 @@ public class Util {
         return dayStrings[c.get(Calendar.DAY_OF_WEEK) - 1];
     }
 
+    public static String getTodayString()
+    {
+        Date date = new Date();
+        SimpleDateFormat defaultFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        return defaultFormat.format(date);
+    }
+
     ///------------ ClipBoard
     public static void setClipBoard(Context c , CharSequence s)
     {
