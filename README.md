@@ -15,6 +15,9 @@ ColaUtility is framework for android project.
 7. playAudioFile<br>
 8. getStringFileSize<br>
 9. convertDrawableToTempFile<br>
+10. getListOfImageFiles<br>
+11. getListOfVideoFiles<br>
+12. getListOfFiles<br>
 
 ###ImageUtil
 [Source code](app/src/main/java/com/cbstudio/colautility/ImageUtil.java)
