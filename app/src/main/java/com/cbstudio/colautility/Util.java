@@ -13,6 +13,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.telephony.PhoneNumberUtils;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -67,6 +68,26 @@ public class Util {
             }
         } else {
 
+        }
+    }
+
+    /**
+     *
+     * @param name original name.
+     * @return simplename eg) Mark Ethan => ME , 01022230220 => 010
+     */
+    public  static String getSimpleNmae(String name){
+        if (name.split(" ")[0].equals(name.split(" ")[0].toUpperCase())) {
+            return name.charAt(0) + "";
+        } else {
+            if (name.lastIndexOf(" ") != -1) {
+                String[] str = name.split(" ");
+                if (TextUtils.isEmpty(str[1])) {
+                    return str[0].charAt(0) + "";
+                }
+                return str[0].charAt(0) + "" + str[1].charAt(0) + "";
+            } else
+                return name.charAt(0) + "";
         }
     }
 
