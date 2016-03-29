@@ -10,14 +10,16 @@ ColaUtility is framework for android project.
 2. setFont<br>
 3. convertStringToDate<br>
 4. getDayString<br>
-5. setClipBoard<br>
-6. getExtension<br>
-7. playAudioFile<br>
-8. getStringFileSize<br>
-9. convertDrawableToTempFile<br>
-10. getListOfImageFiles<br>
-11. getListOfVideoFiles<br>
-12. getListOfFiles<br>
+5. getTodayString<br>
+6. setClipBoard<br>
+7. getExtension<br>
+8. playAudioFile<br>
+9. getStringFileSize<br>
+10. convertDrawableToTempFile<br>
+11. getListOfImageFiles<br>
+12. getListOfVideoFiles<br>
+13. getListOfFiles<br>
+14. getSimpleNmae<br>
 
 ###ImageUtil
 [Source code](app/src/main/java/com/cbstudio/colautility/ImageUtil.java)
